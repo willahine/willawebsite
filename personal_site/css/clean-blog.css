@@ -1,0 +1,196 @@
+body {
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-size: 33px;
+    color: #404040;
+}
+.row {
+    text-align: center;
+}
+.page-heading {
+    text-align: center;
+}
+.subheading {
+    font-size: 23px;
+    text-transform: uppercase;
+}
+p {
+    line-height: 1.5;
+    margin: 30px 0;
+}
+p a {
+    text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+}
+a {
+    color: #404040;
+}
+a:hover,
+a:focus {
+    color: #ff0099;
+}
+a img:hover,
+a img:focus {
+    cursor: zoom-in;
+}
+.intro-header {
+    background-color: #808080;
+    background: no-repeat center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 50px;
+}
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading {
+    padding: 100px 0 50px;
+    color: white;
+}
+.mainC {
+    background-color: #808080;
+    background: no-repeat center;
+    background-attachment: scroll;
+    background-size: contain;
+    -o-background-size: cover;
+    margin-bottom: 50px;
+    opacity: .8;
+}
+@media only screen and (max-width: 600px) {
+    #skrollr-body {
+        visibility: hidden;
+    }
+    .inner-item {
+        text-align: center;
+    }
+    .subheading img {
+        width: 16%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    footer {
+        padding: 50px 0 65px;
+    }
+    footer .list-inline {
+        margin: 0;
+        padding: 0;
+    }
+    ::selection {
+        color: white;
+        text-shadow: none;
+        background: #0085a1;
+    }
+    img::selection {
+        color: white;
+        background: transparent;
+    }
+    img::-moz-selection {
+        color: white;
+        background: transparent;
+    }
+    .about {
+        text-align: center;
+    }
+}
+.boxy {
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    width: 220px;
+    height: 220px;
+}
+.boxy:after,
+.inner-item:before {
+    content: '';
+    display: table;
+}
+.boxy:after {
+    clear: both;
+}
+.inner-item {
+    width: 100%;
+    height: 100%;
+    background: #aaaaaa;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.sub {
+    position: absolute;
+    background: #ff0099;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -webkit-transform: scale(0);
+}
+.inner-item h3 {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 34px;
+    font-size: 20px;
+    margin: 23px 30px;
+    padding: 52px 0 0 0;
+    height: 100px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 0 0 1px #fff, 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.sub p {
+    color: #fff;
+    padding: 4px 5px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
+    margin: 130px 30px;
+    border-top: 5px solid rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0.8s;
+}
+.sub p a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding-top: 7px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+.sub p a:hover {
+    padding: 5px;
+    border-radius: 101px;
+    border: 2px solid #ffffff;
+    background-color: rgba(186, 97, 29, 0.1);
+}
+.inner-item:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.inner-item:hover .sub {
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+.inner-item:hover .sub p {
+    opacity: 1;
+}
